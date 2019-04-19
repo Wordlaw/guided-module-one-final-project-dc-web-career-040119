@@ -1,4 +1,13 @@
-# Module One Project 
+# Construction Info
+A car belongs to a class
+A class has many cars
+A class has many class_tracks
+A track has many class_tracks
+A track_class belongs to a track
+A track_class belongs to a class
+
+
+# Module One Project
 
 Congratulations, you're at the end of module one! You've worked crazy hard to get here and have learned a ton.
 
