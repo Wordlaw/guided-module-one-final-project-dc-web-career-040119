@@ -16,20 +16,20 @@ ActiveRecord::Schema.define(version: 2019_04_18_210714) do
     t.string "name"
     t.string "car_class"
     t.integer "car_handling"
-    t.integer "class_id"
+    t.integer "klass_id"
   end
 
-  create_table "klass", force: :cascade do |t|
-    t.string "klass_name"
-    t.string "klass_info"
-  end
-
-  create_table "klass_track", force: :cascade do |t|
+  create_table "klass_tracks", force: :cascade do |t|
     t.integer "klass_id"
     t.integer "track_id"
   end
 
-  create_table "track", force: :cascade do |t|
+  create_table "klasses", force: :cascade do |t|
+    t.string "klass_name"
+    t.string "klass_info"
+  end
+
+  create_table "tracks", force: :cascade do |t|
     t.string "course_name"
     t.integer "course_min_speed"
     t.integer "course_difficulty"

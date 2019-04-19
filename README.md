@@ -224,3 +224,27 @@ Now, add this method to the run method, and pass it the lines we got in the ```f
 
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/guided-module-one-final-project'>Guided Module One Final Project</a> on Learn.co and start learning to code for free.</p>
+
+
+<!-- puts <<-'EOF'
+   _____                   _______               _
+  / ____|                 |__   __|             (_)
+ | |  __ _ __ __ _ _ __      | | ___  _   _ _ __ _ ___ _ __ ___   ___
+ | | |_ | '__/ _` | '_ \     | |/ _ \| | | | '__| / __| '_ ` _ \ / _ \
+ | |__| | | | (_| | | | |    | | (_) | |_| | |  | \__ \ | | | | | (_) |
+  \_____|_|  \__,_|_| |_|    |_|\___/ \__,_|_|  |_|___/_| |_| |_|\___/
+
+EOF
+
+puts " "
+puts " "
+puts " "
+puts " "
+puts "                !!Welcome to Gran Tourismo!! "
+puts " "
+puts " "
+puts " "
+puts " "
+puts "             Lets get started, tell us your name "
+puts " "
+puts " " -->
