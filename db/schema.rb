@@ -13,9 +13,10 @@
 ActiveRecord::Schema.define(version: 2019_04_18_210714) do
 
   create_table "cars", force: :cascade do |t|
-    t.string "car_name"
+    t.string "name"
     t.string "car_class"
     t.integer "car_handling"
+    t.integer "class_id"
   end
 
   create_table "klass", force: :cascade do |t|
@@ -24,8 +25,8 @@ ActiveRecord::Schema.define(version: 2019_04_18_210714) do
   end
 
   create_table "klass_track", force: :cascade do |t|
-    t.string "klass"
-    t.string "track"
+    t.integer "klass_id"
+    t.integer "track_id"
   end
 
   create_table "track", force: :cascade do |t|

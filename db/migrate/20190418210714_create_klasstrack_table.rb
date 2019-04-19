@@ -1,8 +1,8 @@
 class CreateKlasstrackTable < ActiveRecord::Migration[5.2]
   def change
-    create_table(:klass_track) do |klass_tracks|
-      klass_tracks.string :klass #Class object
-      klass_tracks.string :track #track objects
+    create_table(:klass_track) do |t|
+      t.integer :klass_id #Class id
+      t.integer :track_id #track id
     end
   end
 end
