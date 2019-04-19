@@ -12,16 +12,16 @@ class_s = Klass.create(klass_name: "Class S", klass_info: "Super Sport")
 # t.string "car_class"
 # t.integer "car_handling"
 # t.integer "klass_id"
-jeep_wrangler = Car.create(name: "Jeep Wrangler", car_class: "C", car_handling: 1, klass_id: class_c)
-honda_civic = Car.create(name: "HondaCivic", car_class: "C", car_handling: 2, klass_id: class_c)
-subara_sti = Car.create(name: "Subaru WRX STI", car_class: "B", car_handling: 3, klass_id: class_b)
-mitsubishi_evo = Car.create(name: "Mitsubishi Lancer Evolution", car_class: "B", car_handling: 3, klass_id: class_b)
-dodge_hellcat = Car.create(name: "Dodge Hellcat", car_class: "B", car_handling: 2, klass_id: class_b)
-nissan_gtr = Car.create(name: "Nissan GTR", car_class: "A", car_handling: 4, klass_id: class_a)
-chevrolet_z06 = Car.create(name: "Chevrolet Corvette Z06", car_class: "A", car_handling: 4, klass_id: class_a)
-porsche_911 = Car.create(name: "Porsche 911", car_class: "A", car_handling: 5, klass_id: class_a)
-mclaren_p1 = Car.create(name: "Mclaren P1", car_class: "S", car_handling: 5, klass_id: class_s)
-porsche_918 = Car.create(name: "Porscche 918", car_class: "S", car_handling: 5, klass_id: class_s)
+jeep_wrangler = Car.create(name: "Jeep Wrangler", car_class: "C", car_handling: 1, klass_id: class_c.id)
+honda_civic = Car.create(name: "HondaCivic", car_class: "C", car_handling: 2, klass_id: class_c.id)
+subara_sti = Car.create(name: "Subaru WRX STI", car_class: "B", car_handling: 3, klass_id: class_b.id)
+mitsubishi_evo = Car.create(name: "Mitsubishi Lancer Evolution", car_class: "B", car_handling: 3, klass_id: class_b.id)
+dodge_hellcat = Car.create(name: "Dodge Hellcat", car_class: "B", car_handling: 2, klass_id: class_b.id)
+nissan_gtr = Car.create(name: "Nissan GTR", car_class: "A", car_handling: 4, klass_id: class_a.id)
+chevrolet_z06 = Car.create(name: "Chevrolet Corvette Z06", car_class: "A", car_handling: 4, klass_id: class_a.id)
+porsche_911 = Car.create(name: "Porsche 911", car_class: "A", car_handling: 5, klass_id: class_a.id)
+mclaren_p1 = Car.create(name: "Mclaren P1", car_class: "S", car_handling: 5, klass_id: class_s.id)
+porsche_918 = Car.create(name: "Porscche 918", car_class: "S", car_handling: 5, klass_id: class_s.id)
 
 #***************TRACKS
 # t.string "course_name"
@@ -38,10 +38,10 @@ willow_springs = Track.create(course_name: "Willow Springs")
 #***************KlassTrack
 # t.integer "klass_id"
 # t.integer "track_id"
-class_s_nurburg = KlassTrack.create(klass_id: class_s, track_id: nurburgring)
-class_s_laguna = KlassTrack.create(klass_id: class_s, track_id: laguna_seca)
-class_a_fuji = KlassTrack.create(klass_id: class_a, track_id: fuji)
-class_a_fuji = KlassTrack.create(klass_id: class_a, track_id: silverstone)
-class_b_fuji = KlassTrack.create(klass_id: class_b, track_id: suzuka)
-class_b_fuji = KlassTrack.create(klass_id: class_b, track_id: willow_springs)
-class_c_fuji = KlassTrack.create(klass_id: class_c, track_id: indianappolis)
+class_s_nurburg = KlassTrack.create(klass_id: class_s.id, track_id: nurburgring.id)
+class_s_laguna = KlassTrack.create(klass_id: class_s.id, track_id: laguna_seca.id)
+class_a_fuji = KlassTrack.create(klass_id: class_a.id, track_id: fuji.id)
+class_a_fuji = KlassTrack.create(klass_id: class_a.id, track_id: silverstone.id)
+class_b_fuji = KlassTrack.create(klass_id: class_b.id, track_id: suzuka.id)
+class_b_fuji = KlassTrack.create(klass_id: class_b.id, track_id: willow_springs.id)
+class_c_fuji = KlassTrack.create(klass_id: class_c.id, track_id: indianappolis.id)
